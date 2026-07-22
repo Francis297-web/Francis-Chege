@@ -117,12 +117,12 @@ a {
 
 /* Logo icon — the one exception to passport sizing, stays small and circular */
 .site-logo {
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px;
+  margin-right: 8px;
   border: 2px solid rgba(255, 255, 255, 0.15);
 }
 
