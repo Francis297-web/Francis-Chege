@@ -115,6 +115,29 @@ a {
   color: var(--purple);
 }
 
+/* Logo icon — the one exception to passport sizing, stays small and circular */
+.site-logo {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Shared "passport photo" standard for real content photos:
+   hero, about, and testimonial feature images. Small, portrait,
+   consistent — not full-bleed hero-style photos. */
+.passport-photo {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
 .navmenu ul {
   display: flex;
   gap: 34px;
@@ -299,12 +322,11 @@ a {
 }
 
 .hero-image img {
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 1 / 1;
+  width: 150px;
+  height: 190px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid var(--blue);
+  border-radius: 12px;
+  border: 3px solid var(--blue);
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.35), 0 0 70px rgba(139, 92, 246, 0.2);
   position: relative;
   z-index: 2;
@@ -319,16 +341,16 @@ a {
 }
 
 .hero-image .shape-1 {
-  width: 220px;
-  height: 220px;
+  width: 140px;
+  height: 140px;
   background: rgba(59, 130, 246, 0.25);
   top: -20px;
   left: -20px;
 }
 
 .hero-image .shape-2 {
-  width: 180px;
-  height: 180px;
+  width: 110px;
+  height: 110px;
   background: rgba(139, 92, 246, 0.25);
   bottom: -10px;
   right: -10px;
@@ -337,11 +359,18 @@ a {
 /* ==========================
    ABOUT
 ========================== */
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
 .about-image img {
-  width: 100%;
-  max-height: 460px;
+  width: 150px;
+  height: 190px;
   object-fit: cover;
+  border-radius: 12px;
   box-shadow: var(--shadow);
+  border: 3px solid var(--border);
 }
 
 .about-content .subtitle {
@@ -610,10 +639,13 @@ a {
 }
 
 .featured-img-wrapper {
-  border-radius: var(--radius-lg);
+  width: 150px;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 12px;
   overflow: hidden;
-  height: 100%;
-  max-height: 320px;
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 .featured-img {
