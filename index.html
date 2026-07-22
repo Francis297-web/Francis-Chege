@@ -14,24 +14,6 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <style>
-    .floating-whatsapp{
-      position:fixed; bottom:25px; right:25px; width:60px; height:60px;
-      background:#25D366; color:#fff; border-radius:50%; display:flex;
-      align-items:center; justify-content:center; font-size:32px;
-      z-index:9999; box-shadow:0 10px 25px rgba(37,211,102,.4); transition:.3s;
-    }
-    .floating-whatsapp:hover{transform:translateY(-4px) scale(1.05); color:#fff; box-shadow:0 15px 35px rgba(37,211,102,.5)}
-    .floating-whatsapp::after{content:''; position:absolute; inset:0; border-radius:50%; background:#25D366; animation:pulse-green 2s infinite; z-index:-1}
-    @keyframes pulse-green{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.6);opacity:0}}
-    .download-cv-btn-mobile{
-      position:fixed; bottom:25px; left:25px; z-index:9999;
-      background:var(--gradient-primary); color:#fff; padding:12px 20px;
-      border-radius:30px; font-weight:600; font-size:.9rem; display:none;
-      align-items:center; gap:8px; box-shadow:0 10px 25px rgba(102,126,234,.4);
-    }
-    @media(max-width:768px){.download-cv-btn-mobile{display:flex}}
-  </style>
 </head>
 <body class="index-page">
 
@@ -88,20 +70,201 @@
     </section>
 
     <!-- ABOUT - keep yours -->
-    <section id="about" class="about section light-background">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2><div class="title-shape"><svg viewBox="0 0 200 20"><path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path></svg></div>
-        <p>From self-taught developer to founder — building technology that matters.</p>
-      </div>
-      <div class="container"><div class="row align-items-center">
-        <div class="col-lg-6"><div class="about-image"><img src="image/profile.png" alt="Francis Chege" class="img-fluid rounded-4"></div></div>
-        <div class="col-lg-6">
-          <span class="subtitle">About Me</span><h2>Building Technology That Solves Real Problems</h2>
-          <p>I'm Francis Chege, a 19-year-old full-stack developer from Kenya and founder of <strong>Fratience Technologies</strong>.</p>
-          <div class="personal-info mt-4"><div class="row g-3"><div class="col-6"><div class="info-item"><span class="label">Location</span><span class="value">Nairobi, Kenya</span></div></div><div class="col-6"><div class="info-item"><span class="label">Phone</span><span class="value">+254 790 357 975</span></div></div><div class="col-6"><div class="info-item"><span class="label">Email</span><span class="value">francischege381@gmail.com</span></div></div><div class="col-6"><div class="info-item"><span class="label">Company</span><span class="value">Fratience Technologies</span></div></div></div></div>
+ <section id="about" class="about section light-background">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Me</h2>
+
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"></path>
+      </svg>
+    </div>
+
+    <p>Passionate about creating innovative software that solves real-world problems.</p>
+  </div>
+
+  <div class="container">
+
+    <div class="row align-items-center gy-5">
+
+      <!-- Image -->
+      <div class="col-lg-5" data-aos="fade-right">
+
+        <div class="about-image text-center">
+
+          <img src="image/profile.png"
+               class="img-fluid rounded-4 shadow-lg"
+               alt="Francis Chege">
+
         </div>
-      </div></div>
-    </section>
+
+      </div>
+
+      <!-- Content -->
+      <div class="col-lg-7" data-aos="fade-left">
+
+        <span class="subtitle text-primary fw-bold">
+          Full Stack Developer
+        </span>
+
+        <h2 class="mt-2">
+          Building Technology That Creates Real Impact
+        </h2>
+
+        <p class="lead mt-3">
+          I'm <strong>Francis Chege</strong>, a passionate software developer
+          and the founder of <strong>Fratience Technologies</strong>.
+          I enjoy transforming ideas into modern digital solutions—from
+          responsive websites and Android applications to AI-powered systems
+          and cybersecurity tools.
+        </p>
+
+        <p>
+          My goal is to build technology that improves people's lives while
+          continuously expanding my knowledge in software engineering,
+          cloud computing, artificial intelligence, and cybersecurity.
+        </p>
+
+        <!-- Skills -->
+
+        <div class="mt-4">
+
+          <span class="badge bg-primary me-2 mb-2">Python</span>
+          <span class="badge bg-dark me-2 mb-2">JavaScript</span>
+          <span class="badge bg-success me-2 mb-2">React</span>
+          <span class="badge bg-info text-dark me-2 mb-2">Node.js</span>
+          <span class="badge bg-warning text-dark me-2 mb-2">Android</span>
+          <span class="badge bg-danger me-2 mb-2">Cybersecurity</span>
+          <span class="badge bg-secondary me-2 mb-2">PostgreSQL</span>
+          <span class="badge bg-primary me-2 mb-2">Docker</span>
+
+        </div>
+
+        <!-- Personal Info -->
+
+        <div class="personal-info mt-5">
+
+          <div class="row g-4">
+
+            <div class="col-md-6">
+
+              <div class="info-item">
+
+                <span class="label">Location</span>
+
+                <span class="value">Nairobi, Kenya</span>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="info-item">
+
+                <span class="label">Email</span>
+
+                <span class="value">
+                  francischege381@gmail.com
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="info-item">
+
+                <span class="label">Phone</span>
+
+                <span class="value">
+                  +254 790 357 975
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+              <div class="info-item">
+
+                <span class="label">Company</span>
+
+                <span class="value">
+                  Fratience Technologies
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="row text-center mt-5">
+
+          <div class="col-4">
+
+            <h3 class="fw-bold text-primary">10+</h3>
+
+            <small>Projects</small>
+
+          </div>
+
+          <div class="col-4">
+
+            <h3 class="fw-bold text-primary">3</h3>
+
+            <small>Products</small>
+
+          </div>
+
+          <div class="col-4">
+
+            <h3 class="fw-bold text-primary">2026</h3>
+
+            <small>Founded Fratience</small>
+
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="mt-5 d-flex flex-wrap gap-3">
+
+          <a href="#portfolio" class="btn btn-primary">
+
+            View My Projects
+
+          </a>
+
+          <a href="assets/Francis_Chege_CV.pdf"
+             download
+             class="btn btn-outline-primary">
+
+            Download CV
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     <!-- YOUR PROJECTS - RESTORED 100% -->
     <section id="portfolio" class="portfolio section">
