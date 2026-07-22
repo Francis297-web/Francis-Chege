@@ -88,15 +88,16 @@ a {
    HEADER / NAVBAR
 ========================== */
 #header {
-  background: rgba(5, 8, 22, 0.85);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.1), rgba(5, 8, 22, 0.92) 60%);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.25);
   min-height: 80px;
   z-index: 1000;
   transition: 0.3s;
 }
 
 #header.scrolled {
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.05), rgba(5, 8, 22, 0.97) 60%);
   box-shadow: var(--shadow);
 }
 
@@ -192,6 +193,7 @@ a {
   font-weight: 600;
   transition: 0.3s;
   white-space: nowrap;
+  margin-top: 8px;
 }
 
 .download-cv-btn:hover {
