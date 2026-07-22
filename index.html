@@ -30,32 +30,36 @@
 </head>
 
 <body class="index-page">
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="#hero" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="image/logo.png" alt="Francis Chege logo" class="site-logo">
+      <h1 class="sitename">Francis Chege<span>.</span></h1>
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house-door me-1"></i>Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+    <div class="header-actions d-none d-xl-flex ms-3">
+      <span class="header-availability"><span class="dot"></span> Available</span>
+    </div>
+  </div>
+</header>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="image/logo.png" alt="Francis Chege logo" class="site-logo">
-        <h1 class="sitename">Francis Chege<span>.</span></h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-actions d-flex align-items-center flex-shrink-0 ms-3">
-        <a href="assets/Francis_Mbugua_CV.pdf" download class="download-cv-btn d-none d-md-inline-flex align-items-center gap-2">
-          <i class="bi bi-download"></i>
-          <span>Download CV</span>
-        </a>
+<!-- FLOATING CV -->
+<a href="assets/Francis_Mbugua_CV.pdf" download class="floating-cv-btn">
+  <i class="bi bi-cloud-arrow-down-fill"></i>
+  <span>Download CV</span>
+</a>
+  
       </div>
 
     </div>
@@ -66,31 +70,15 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center content justify-content-center">
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <h1 class="hero-name">Francis Chege</h1>
-            <h2>Full Stack Developer &amp; Software Engineer</h2>
-            <p class="lead">Founder of Fratience Technologies, crafting modern websites, Android apps, and cybersecurity solutions that solve real-world problems.</p>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="#portfolio" class="btn btn-primary">View My Work</a>
-              <a href="#contact" class="btn btn-outline">Get in Touch</a>
-            </div>
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-              <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Projects Shipped</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">8+</span>
-                <span class="stat-label">Skills & Tools</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">100%</span>
-                <span class="stat-label">Self-Driven</span>
-              </div>
-            </div>
-          </div>
-        </div>
+       <div class="row align-items-center gy-5">
+  <div class="col-lg-7"> ... your text / cta ... </div>
+  <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+    <div class="hero-image">
+      <span class="shape-1"></span><span class="shape-2"></span>
+      <img src="image/profile.png" alt="Francis Chege">
+    </div>
+  </div>
+</div>
       </div>
     </section><!-- /Hero Section -->
 
