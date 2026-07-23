@@ -3,7 +3,7 @@
 //
 // Point this at your backend once it's deployed, e.g.
 // "https://your-backend.onrender.com/send-message"
-const CONTACT_API_URL = "https://5500/send-message";
+const CONTACT_API_URL = "https://portfolio-backend-q63o.onrender.com/send-message";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
