@@ -279,12 +279,6 @@ section {
 
 .sitename span {
   color: var(--primary-400);
-  animation: blink 2s infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.25; }
 }
 
 /* Navigation */
@@ -591,7 +585,7 @@ section {
 }
 
 .about-image:hover img {
-  transform: rotateX(2deg) rotateY(-2deg) scale(1.02);
+  transform: translateY(-4px) scale(1.01);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2), 0 0 40px rgba(99, 102, 241, 0.15);
 }
 
@@ -614,23 +608,6 @@ section {
   top: 14px;
   left: -14px;
   opacity: 0.45;
-}
-
-/* Floating accent */
-.about-image::after {
-  content: '💻';
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  font-size: 3rem;
-  z-index: 3;
-  animation: floatEmoji 3s ease-in-out infinite;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
-}
-
-@keyframes floatEmoji {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
 }
 
 /* Content */
@@ -753,13 +730,10 @@ section {
   transition: all var(--transition-spring);
   height: 100%;
   border: 1px solid var(--gray-200);
-  transform: rotateX(0deg) rotateY(0deg);
-  transform-style: preserve-3d;
-  perspective: 1200px;
 }
 
 .project-card:hover {
-  transform: rotateX(2deg) rotateY(-2deg) translateY(-12px);
+  transform: translateY(-10px);
   box-shadow: var(--shadow-2xl);
   border-color: var(--primary-300);
 }
@@ -767,17 +741,19 @@ section {
 .portfolio-image {
   position: relative;
   overflow: hidden;
+  background: var(--gray-100);
 }
 
 .portfolio-image img {
-  transition: transform 0.7s ease;
+  transition: transform 0.5s ease;
   width: 100%;
-  height: 240px;
+  height: 300px;
   object-fit: cover;
+  object-position: top center;
 }
 
 .project-card:hover .portfolio-image img {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .portfolio-overlay {
@@ -884,11 +860,10 @@ section {
   border: 1px solid transparent;
   position: relative;
   overflow: hidden;
-  transform: rotateX(0deg) rotateY(0deg);
 }
 
 .service-item:hover {
-  transform: rotateX(2deg) rotateY(-2deg) translateY(-10px);
+  transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
   border-color: var(--gray-200);
 }
@@ -1128,12 +1103,6 @@ textarea.form-control {
   align-items: center;
   gap: 8px;
   z-index: 5;
-  animation: floatBadge 3s ease-in-out infinite;
-}
-
-@keyframes floatBadge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
 }
 
 /* ===== FOOTER ===== */
@@ -1326,8 +1295,7 @@ textarea.form-control {
     font-size: 1.75rem;
   }
 
-  .about-image::before,
-  .about-image::after {
+  .about-image::before {
     display: none;
   }
 
