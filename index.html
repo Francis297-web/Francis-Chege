@@ -1,678 +1,1121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  <!-- ===== SEO TITLE TAG ===== -->
-  <title>Francis Chege – Full Stack Developer & Founder | Fratience Technologies Kenya</title>
-  
-  <!-- ===== META DESCRIPTION (Google snippet) ===== -->
-  <meta name="description" content="Francis Chege is a Full Stack Developer and founder of Fratience Technologies in Kenya. Building modern web apps, Android applications, AI systems, and cybersecurity solutions. Available for freelance projects worldwide.">
-  
-  <!-- ===== META KEYWORDS ===== -->
-  <meta name="keywords" content="Francis Chege, full stack developer Kenya, software engineer Nairobi, Fratience Technologies, web developer Kenya, Android developer, cybersecurity expert Kenya, React developer, Node.js developer">
-  
-  <!-- ===== META AUTHOR ===== -->
-  <meta name="author" content="Francis Chege">
-  
-  <!-- ===== META ROBOTS ===== -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  
-  <!-- ===== CANONICAL URL ===== -->
-  <link rel="canonical" href="https://francis-chege.dev/">
-  
-  <!-- ===== OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ===== -->
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Francis Chege – Full Stack Developer & Founder | Fratience Technologies">
-  <meta property="og:description" content="Full Stack Developer from Kenya building modern web apps, Android applications, and cybersecurity solutions. Founder of Fratience Technologies.">
-  <meta property="og:url" content="https://francis-chege.dev/">
-  <meta property="og:site_name" content="Francis Chege | Portfolio">
-  <meta property="og:image" content="https://francis-chege.dev/image/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Francis Chege - Full Stack Developer">
-  <meta property="og:image:type" content="image/png">
-  
-  <!-- ===== TWITTER CARD ===== -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Francis Chege – Full Stack Developer & Founder">
-  <meta name="twitter:description" content="Full Stack Developer from Kenya. Building modern web apps, Android applications, and cybersecurity solutions. Founder of Fratience Technologies.">
-  <meta name="twitter:image" content="https://francis-chege.dev/image/og-image.png">
-  <meta name="twitter:image:alt" content="Francis Chege - Full Stack Developer">
-  
-  <!-- ===== SCHEMA.ORG STRUCTURED DATA (Google Rich Results) ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Francis Chege",
-    "givenName": "Francis",
-    "familyName": "Chege",
-    "alternateName": "Francis Chege Mbugua",
-    "description": "Full Stack Developer and founder of Fratience Technologies based in Nairobi, Kenya. Specializing in web development, Android apps, AI systems, and cybersecurity.",
-    "url": "https://francis-chege.dev",
-    "email": "francischege381@gmail.com",
-    "telephone": "+254790357975",
-    "image": "https://francis-chege.dev/image/profile.png",
-    "jobTitle": "Full Stack Developer & Software Engineer",
-    "nationality": {
-      "@type": "Country",
-      "name": "Kenya"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Nairobi",
-      "addressCountry": "KE"
-    },
-    "knowsAbout": [
-      "Full Stack Development",
-      "React.js",
-      "Node.js",
-      "Python",
-      "Android Development",
-      "Cybersecurity",
-      "Rust Programming",
-      "Cloud Computing",
-      "Artificial Intelligence",
-      "PostgreSQL",
-      "Docker"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Fratience Technologies",
-      "url": "https://francis-chege.dev",
-      "foundingDate": "2026",
-      "founder": {
-        "@type": "Person",
-        "name": "Francis Chege"
-      },
-      "description": "Technology company building modern web applications, Android apps, and cybersecurity solutions from Kenya."
-    },
-    "sameAs": [
-      "https://github.com/Francis297-web",
-      "https://www.instagram.com/just.call.mi.Cisco",
-      "https://www.facebook.com/FrakySpikes",
-      "https://wa.me/254790357975"
-    ],
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "eMobilis Technology Institute"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francis Mbugua - Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  }
-  </script>
-  
-  <!-- ===== BREADCRUMB SCHEMA ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://francis-chege.dev/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Portfolio",
-        "item": "https://francis-chege.dev/#portfolio"
+    body {
+      background: #0a0a0b;
+      color: #fff;
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #262629;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0a0b;
+    }
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(24px);
+      background: rgba(10, 10, 11, 0.8);
+      border-bottom: 1px solid #1a1a1e;
+      height: 72px;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 16px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .logo img {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .logo span.purple {
+      color: #a78bfa;
+    }
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      font-size: 13.5px;
+      color: #a1a1aa;
+    }
+    .nav-links button {
+      background: none;
+      border: none;
+      color: inherit;
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 13.5px;
+      transition: 0.2s;
+    }
+    .nav-links button:hover {
+      color: #fff;
+      background: #151518;
+    }
+    .nav-links button.active {
+      background: #1c1c20;
+      color: #fff;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-cv {
+      display: none;
+      height: 32px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid #262629;
+      background: #151518;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-cv:hover {
+      border-color: #52525b;
+    }
+    .btn-hire {
+      display: none;
+      height: 32px;
+      padding: 0 16px;
+      border-radius: 999px;
+      background: #fff;
+      color: #000;
+      font-size: 13px;
+      font-weight: 600;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .btn-hire:hover {
+      background: #f4f4f5;
+    }
+    .dot-pulse {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #06ffa5;
+      animation: pulse 2s infinite;
+    }
+    .menu-toggle {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1px solid #262629;
+      background: #151518;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    .menu-toggle div {
+      width: 16px;
+      height: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .menu-toggle div span {
+      height: 2px;
+      background: #fff;
+      transition: 0.3s;
+      display: block;
+    }
+    .menu-toggle div span.open1 {
+      transform: rotate(45deg) translateY(5px);
+    }
+    .menu-toggle div span.open2 {
+      opacity: 0;
+    }
+    .menu-toggle div span.open3 {
+      transform: rotate(-45deg) translateY(-5px);
+    }
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      border-top: 1px solid #1e1e20;
+      background: #0a0a0b;
+      padding: 20px;
+    }
+    .mobile-menu.open {
+      display: block;
+    }
+    .mobile-menu button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: none;
+      border: none;
+      color: #a1a1aa;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .mobile-menu button:hover,
+    .mobile-menu button.active {
+      background: #1e1e20;
+      color: #fff;
+    }
+    .mobile-menu .social-row {
+      display: flex;
+      gap: 8px;
+      padding-top: 8px;
+    }
+    .mobile-menu .social-row a,
+    .mobile-menu .social-row button {
+      flex: 1;
+      height: 44px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .mobile-menu .social-row .wa {
+      background: #fff;
+      color: #000;
+    }
+    .mobile-menu .social-row .cv {
+      border: 1px solid #262629;
+      background: transparent;
+      color: #fff;
+    }
+    /* Toast */
+    .toast {
+      position: fixed;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: #fff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      transition: all 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    /* Section Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Grid Pattern */
+    .grid-pattern {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    /* Buttons */
+    .btn-primary {
+      height: 44px;
+      padding: 0 24px;
+      border-radius: 999px;
+      background: #fff;
+      color: #000;
+      font-weight: 600;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+    }
+    .btn-primary:hover {
+      background: #f4f4f5;
+    }
+    .btn-secondary {
+      height: 44px;
+      padding: 0 24px;
+      border-radius: 999px;
+      border: 1px solid #262629;
+      background: #151518;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+    }
+    .btn-secondary:hover {
+      border-color: #71717a;
+    }
+    /* Cards */
+    .card {
+      border-radius: 20px;
+      border: 1px solid #262629;
+      background: #151518;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .card:hover {
+      border-color: #52525b;
+      transform: translateY(-4px);
+    }
+    /* Responsive */
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
       }
-    ]
-  }
-  </script>
-  
-  <!-- ===== FAQ SCHEMA (if you add FAQ section) ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What services does Francis Chege offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I offer web application development, mobile app development (Android), cybersecurity solutions, API development, and systems architecture. I build complete digital solutions from concept to deployment."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is Francis Chege based?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I am based in Nairobi, Kenya, and work with clients locally and remotely worldwide."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I hire Francis Chege for a project?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can contact me through the contact form on my portfolio website, email me at francischege381@gmail.com, or reach out via WhatsApp at +254 790 357 975."
-        }
+      .btn-cv,
+      .btn-hire {
+        display: inline-flex;
       }
-    ]
-  }
-  </script>
-  
-  <!-- ===== FAVICONS ===== -->
-  <link href="image/logo.png" rel="icon">
-  <link href="image/logo.png" rel="apple-touch-icon">
-  
-  <!-- ===== FONTS ===== -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- ===== VENDOR CSS ===== -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-  <!-- ===== MAIN CSS ===== -->
-  <link href="css/main.css" rel="stylesheet">
-  
-  <!-- ===== PRELOAD KEY IMAGES ===== -->
-  <link rel="preload" as="image" href="image/profile.png" fetchpriority="high">
+      .menu-toggle {
+        display: none;
+      }
+      .mobile-menu {
+        display: none !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .nav-links {
+        display: none;
+      }
+      .btn-cv,
+      .btn-hire {
+        display: none;
+      }
+    }
+    /* Utilities */
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gap-2 {
+      gap: 8px;
+    }
+    .gap-3 {
+      gap: 12px;
+    }
+    .gap-4 {
+      gap: 16px;
+    }
+    .gap-5 {
+      gap: 20px;
+    }
+    .gap-6 {
+      gap: 24px;
+    }
+    .mt-2 {
+      margin-top: 8px;
+    }
+    .mt-3 {
+      margin-top: 12px;
+    }
+    .mt-4 {
+      margin-top: 16px;
+    }
+    .mt-5 {
+      margin-top: 20px;
+    }
+    .mt-6 {
+      margin-top: 24px;
+    }
+    .mt-8 {
+      margin-top: 32px;
+    }
+    .mt-10 {
+      margin-top: 40px;
+    }
+    .mt-12 {
+      margin-top: 48px;
+    }
+    .text-zinc-400 {
+      color: #a1a1aa;
+    }
+    .text-zinc-500 {
+      color: #71717a;
+    }
+    .text-zinc-300 {
+      color: #d4d4d8;
+    }
+    .text-white {
+      color: #fff;
+    }
+    .text-violet-400 {
+      color: #a78bfa;
+    }
+    .text-[#06ffa5] {
+      color: #06ffa5;
+    }
+    .bg-[#06ffa5] {
+      background: #06ffa5;
+    }
+    .border-[#262629] {
+      border-color: #262629;
+    }
+    .border-[#1a1a1e] {
+      border-color: #1a1a1e;
+    }
+    .border-[#1e1e20] {
+      border-color: #1e1e20;
+    }
+    .border-[#151518] {
+      border-color: #151518;
+    }
+    .bg-[#0a0a0b] {
+      background: #0a0a0b;
+    }
+    .bg-[#151518] {
+      background: #151518;
+    }
+    .bg-[#1c1c20] {
+      background: #1c1c20;
+    }
+    .bg-[#0f0f10] {
+      background: #0f0f10;
+    }
+    .bg-[#1e1e20] {
+      background: #1e1e20;
+    }
+    .rounded-full {
+      border-radius: 999px;
+    }
+    .rounded-2xl {
+      border-radius: 16px;
+    }
+    .py-20 {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .py-12 {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+    .py-10 {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .px-5 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @keyframes pulse {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  </style>
 </head>
-<body class="index-page">
+<body>
 
-  <!-- ===== SKIP TO CONTENT (Accessibility) ===== -->
-  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+  <!-- Toast -->
+  <div id="toast" class="toast">Ready</div>
 
-  <!-- ===== HEADER ===== -->
-  <header id="header" class="header d-flex align-items-center sticky-top" role="banner">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" aria-label="Francis Chege Homepage">
-        <img src="image/logo.png" alt="Francis Chege logo" class="site-logo" width="40" height="40">
-        <h1 class="sitename">Francis Chege<span>.</span></h1>
-      </a>
-      
-      <nav id="navmenu" class="navmenu" role="navigation" aria-label="Main navigation">
-        <ul>
-          <li><a href="#hero" class="active" aria-current="page">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#location">Location</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation menu" tabindex="0" role="button"></i>
-      </nav>
-      
-      <div class="header-actions d-flex align-items-center flex-shrink-0 ms-3">
-        <a href="image/Francis_Chege_cv.png" download class="download-cv-btn d-none d-md-inline-flex align-items-center gap-2" aria-label="Download Francis Chege CV">
-          <i class="bi bi-download" aria-hidden="true"></i>
-          <span>Download CV</span>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <button class="logo" onclick="navigateTo('home')">
+        <img src="image/logo.png" alt="logo" />
+        Francis<span class="purple">.</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <button onclick="navigateTo('home')" class="active" data-section="home">Home</button>
+        <button onclick="navigateTo('about')" data-section="about">About</button>
+        <button onclick="navigateTo('skills')" data-section="skills">Skills</button>
+        <button onclick="navigateTo('projects')" data-section="projects">Projects</button>
+        <button onclick="navigateTo('contact')" data-section="contact">Contact</button>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-cv" onclick="showToast('CV download started')">↗ CV</button>
+        <a class="btn-hire" href="https://wa.me/254790357975" target="_blank">
+          <span class="dot-pulse"></span> Hire Me
         </a>
+        <button class="menu-toggle" onclick="toggleMenu()" id="menuToggle">
+          <div>
+            <span id="bar1"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+          </div>
+        </button>
       </div>
-      
     </div>
-  </header>
+  </nav>
 
-  <main class="main" id="main-content">
-    
-    <!-- ===== HERO SECTION ===== -->
-    <section id="hero" class="hero section" aria-labelledby="hero-heading">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            
-            <h1 class="hero-name" id="hero-heading">Francis Chege</h1>
-            <h2>Full Stack Developer & Software Engineer</h2>
-            
-            <p class="lead">Founder of <strong>Fratience Technologies</strong> — building modern web applications, Android apps, and security solutions that solve real problems for businesses and communities across Kenya and beyond.</p>
-            
-            <div class="skill-tags" aria-label="Technical skills">
-              <span class="skill-tag">React.js</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Android</span>
-              <span class="skill-tag">Rust</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">Docker</span>
-            </div>
-            
-            <div class="cta-buttons">
-              <a href="#portfolio" class="btn btn-primary">View My Work</a>
-              <a href="#contact" class="btn btn-outline">Start a Project</a>
-            </div>
-            
-            <div class="metrics-grid" aria-label="Key statistics">
-              <div class="metric-item">
-                <span class="metric-value" aria-hidden="true">10+</span>
-                <span class="metric-label">Projects Delivered</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-value" aria-hidden="true">3</span>
-                <span class="metric-label">Active Products</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-value" aria-hidden="true">100%</span>
-                <span class="metric-label">Client Satisfaction</span>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button onclick="navigateTo('home')" class="active" data-section="home">Home</button>
+    <button onclick="navigateTo('about')" data-section="about">About</button>
+    <button onclick="navigateTo('skills')" data-section="skills">Skills</button>
+    <button onclick="navigateTo('projects')" data-section="projects">Projects</button>
+    <button onclick="navigateTo('contact')" data-section="contact">Contact</button>
+    <div class="social-row">
+      <a href="https://wa.me/254790357975" target="_blank" class="wa">WhatsApp</a>
+      <button class="cv" onclick="showToast('CV download started')">Download CV</button>
+    </div>
+  </div>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="about section light-background" aria-labelledby="about-heading">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 id="about-heading">About Me</h2>
-        <div class="title-shape" aria-hidden="true">
-          <svg viewBox="0 0 200 20">
-            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
-          </svg>
+  <!-- ===== HOME ===== -->
+  <section id="home" data-section="home" class="reveal in-view" style="position:relative;overflow:hidden;">
+    <div class="grid-pattern" style="position:absolute;inset:0;opacity:0.6;"></div>
+    <div style="position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:80vw;max-width:900px;height:520px;border-radius:50%;filter:blur(100px);background:radial-gradient(ellipse at center,rgba(124,58,237,0.18),transparent 60%);"></div>
+    <div class="container" style="position:relative;padding-top:48px;padding-bottom:48px;display:grid;grid-template-columns:1fr;gap:40px;align-items:center;">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:rgba(21,21,24,0.8);font-size:11px;color:#d4d4d8;font-family:'JetBrains Mono',monospace;">
+          <span style="width:8px;height:8px;border-radius:50%;background:#06ffa5;animation:pulse 2s infinite;box-shadow:0 0 10px rgba(6,255,165,0.6);"></span>
+          Available for freelance • Founder @ Nexora • Nairobi, KE
         </div>
-        <p>Passionate about creating innovative software that solves real-world problems for businesses and communities.</p>
+        <h1 style="margin-top:24px;font-size:34px;font-weight:800;line-height:0.92;letter-spacing:-0.04em;">
+          Full Stack<br />
+          <span style="background:linear-gradient(to right,#fff,#fff,#71717a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Developer</span>
+          <span style="display:block;margin-top:8px;font-size:26px;font-weight:500;letter-spacing:-0.03em;color:#a1a1aa;">
+            building products <span style="color:#fff;position:relative;display:inline-flex;">that scale<span style="position:absolute;bottom:-4px;left:0;right:0;height:3px;background:linear-gradient(to right,#8b5cf6,#06ffa5);border-radius:999px;"></span></span>
+          </span>
+        </h1>
+        <p style="margin-top:20px;max-width:540px;font-size:14.5px;line-height:1.75;color:#a1a1aa;">
+          I'm <span style="color:#fff;font-weight:500;">Francis Mbugua Chege</span>, founder of Nexora Technologies. I build modern websites, Android apps, and cybersecurity tools from Kenya — focused on real problems, clean systems, and shipping fast.
+        </p>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;">
+          <button class="btn-primary" onclick="navigateTo('projects')">View Projects ↗</button>
+          <button class="btn-secondary" onclick="navigateTo('contact')">Hire Me <span style="opacity:0.6;">✦</span></button>
+        </div>
+        <div style="margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);max-width:420px;border-top:1px solid #1e1e20;padding-top:24px;">
+          <div style="border-right:1px solid #1e1e20;padding:0 8px;"><div style="font-size:20px;font-weight:700;letter-spacing:-0.025em;line-height:1;">3+ yrs</div><div style="margin-top:6px;font-size:10.5px;color:#71717a;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;">Experience</div></div>
+          <div style="border-right:1px solid #1e1e20;padding:0 8px;"><div style="font-size:20px;font-weight:700;letter-spacing:-0.025em;line-height:1;">15+ Projects</div><div style="margin-top:6px;font-size:10.5px;color:#71717a;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;">Shipped</div></div>
+          <div style="padding:0 8px;"><div style="font-size:20px;font-weight:700;letter-spacing:-0.025em;line-height:1;">100%</div><div style="margin-top:6px;font-size:10.5px;color:#71717a;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;">On Time</div></div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:center;">
+        <div style="position:relative;width:100%;max-width:380px;border-radius:28px;border:1px solid #262629;background:#151518;padding:10px;box-shadow:0 20px 80px rgba(0,0,0,0.5);">
+          <div style="position:relative;border-radius:20px;overflow:hidden;background:#0a0a0b;aspect-ratio:0.9;">
+            <img src="image/profile.png" alt="Francis Mbugua" style="width:100%;height:100%;object-fit:cover;" />
+            <div style="position:absolute;inset:0;background:linear-gradient(to top,#0a0a0b,transparent,transparent);"></div>
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:16px;display:flex;align-items:flex-end;justify-content:space-between;">
+              <div style="backdrop-filter:blur(24px);background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:10px 16px;">
+                <div style="font-size:13px;font-weight:600;line-height:1;">Francis Mbugua</div>
+                <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#a1a1aa;margin-top:4px;">Full Stack • Founder</div>
+              </div>
+              <div style="width:36px;height:36px;border-radius:50%;background:#06ffa5;display:grid;place-items:center;color:#000;font-size:14px;box-shadow:0 0 20px rgba(6,255,165,0.5);">✦</div>
+            </div>
+          </div>
+          <div style="position:absolute;top:-8px;right:-8px;background:#151518;border:1px solid rgba(6,182,212,0.2);color:#67e8f9;padding:6px 12px;border-radius:999px;font-size:11px;font-family:'JetBrains Mono',monospace;display:flex;align-items:center;gap:6px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1);">
+            <span style="width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse 2s infinite;"></span> React
+          </div>
+          <div style="position:absolute;top:45%;left:-12px;background:#151518;border:1px solid rgba(34,197,94,0.2);color:#86efac;padding:6px 12px;border-radius:999px;font-size:11px;font-family:'JetBrains Mono',monospace;display:flex;align-items:center;gap:6px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1);">
+            <span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Node.js
+          </div>
+          <div style="position:absolute;bottom:-12px;right:24px;background:#fff;color:#000;padding:6px 12px;border-radius:999px;font-size:11px;font-family:'JetBrains Mono',monospace;font-weight:600;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1);">Rust • Security</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" data-section="about" class="reveal" style="border-top:1px solid #151518;background:#0a0a0b;padding-top:80px;padding-bottom:80px;">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;">
+        <div style="max-width:560px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#71717a;">Featured Work • 2023—2026</div>
+          <h2 style="margin-top:12px;font-size:32px;font-weight:700;line-height:1.05;letter-spacing:-0.03em;">Building software that solves real problems.</h2>
+          <p style="margin-top:16px;font-size:15px;line-height:1.7;color:#a1a1aa;">I work across the stack — interface to infrastructure — on web, mobile and security. Founder mindset, engineer execution.</p>
+        </div>
+        <button class="btn-secondary" onclick="navigateTo('projects')" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;height:36px;padding:0 16px;">See all projects ↗</button>
+      </div>
+      <div style="margin-top:48px;display:grid;grid-template-columns:1fr;gap:20px;">
+        <!-- Project Cards -->
+        <div class="card" style="display:grid;grid-template-columns:1fr;">
+          <div style="position:relative;height:200px;overflow:hidden;background:#0a0a0b;">
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(124,58,237,0.3),rgba(217,70,239,0.2),rgba(76,29,149,0.2));opacity:0.6;"></div>
+            <img src="image/nexora.webp" alt="Nexora Technologies" style="width:100%;height:100%;object-fit:cover;mix-blend-mode:luminosity;transition:0.5s;" />
+            <div style="position:absolute;top:12px;left:12px;"><span style="height:24px;padding:0 10px;border-radius:999px;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(8px);font-size:10px;font-weight:500;font-family:'JetBrains Mono',monospace;color:#e4e4e7;display:grid;place-items:center;">Marketplace • Live</span></div>
+            <div style="position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;opacity:0;transition:0.3s;">↗</div>
+          </div>
+          <div style="padding:20px;">
+            <h3 style="font-size:16px;font-weight:600;">Nexora Technologies</h3>
+            <p style="margin-top:8px;font-size:13px;line-height:1.6;color:#a1a1aa;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">Freelance marketplace connecting businesses, developers, startups and cybersecurity experts across Kenya. Discovery, trust, fast hiring.</p>
+            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">React</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Node.js</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Firebase</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Tailwind</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="display:grid;grid-template-columns:1fr;">
+          <div style="position:relative;height:200px;overflow:hidden;background:#0a0a0b;">
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(16,185,129,0.25),rgba(20,184,166,0.2),rgba(6,78,59,0.2));opacity:0.6;"></div>
+            <img src="image/Fratience.png" alt="Fratience Tech Solutions" style="width:100%;height:100%;object-fit:cover;mix-blend-mode:luminosity;transition:0.5s;" />
+            <div style="position:absolute;top:12px;left:12px;"><span style="height:24px;padding:0 10px;border-radius:999px;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(8px);font-size:10px;font-weight:500;font-family:'JetBrains Mono',monospace;color:#e4e4e7;display:grid;place-items:center;">Platform • Live</span></div>
+            <div style="position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;opacity:0;transition:0.3s;">↗</div>
+          </div>
+          <div style="padding:20px;">
+            <h3 style="font-size:16px;font-weight:600;">Fratience Tech Solutions</h3>
+            <p style="margin-top:8px;font-size:13px;line-height:1.6;color:#a1a1aa;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">Practical tech for local businesses — inventory, bookings, M-Pesa integration, offline-first architecture for low-connectivity.</p>
+            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Next.js</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">MongoDB</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">M-Pesa</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Vercel</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="display:grid;grid-template-columns:1fr;">
+          <div style="position:relative;height:200px;overflow:hidden;background:#0a0a0b;">
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(37,99,235,0.3),rgba(14,165,233,0.15),rgba(49,46,129,0.2));opacity:0.6;"></div>
+            <img src="image/signix.webp" alt="Signix — KSL Web School" style="width:100%;height:100%;object-fit:cover;mix-blend-mode:luminosity;transition:0.5s;" />
+            <div style="position:absolute;top:12px;left:12px;"><span style="height:24px;padding:0 10px;border-radius:999px;background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(8px);font-size:10px;font-weight:500;font-family:'JetBrains Mono',monospace;color:#e4e4e7;display:grid;place-items:center;">EdTech • AI • Live</span></div>
+            <div style="position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;opacity:0;transition:0.3s;">↗</div>
+          </div>
+          <div style="padding:20px;">
+            <h3 style="font-size:16px;font-weight:600;">Signix — KSL Web School</h3>
+            <p style="margin-top:8px;font-size:13px;line-height:1.6;color:#a1a1aa;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">Sign language education for the deaf — KSL dictionary, creator tools, and AI tutor that understands Kenyan Sign Language.</p>
+            <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;">
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">React</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">AI</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">PWA</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY WORK + SKILLS ===== -->
+  <section style="border-top:1px solid #151518;border-bottom:1px solid #151518;background:#0f0f10;">
+    <div class="container" style="padding-top:80px;padding-bottom:80px;display:grid;grid-template-columns:1fr;gap:48px;align-items:center;">
+      <div id="skills" data-section="skills" class="reveal">
+        <div style="display:inline-flex;align-items:center;gap:8px;font-size:11px;font-family:'JetBrains Mono',monospace;letter-spacing:0.2em;text-transform:uppercase;color:#71717a;border:1px solid #262629;border-radius:999px;padding:0 12px;height:28px;">Why Work With Me</div>
+        <h2 style="margin-top:20px;font-size:30px;font-weight:700;letter-spacing:-0.03em;line-height:1.05;">Clean systems.<br />Fast shipping.<br /><span style="color:#71717a;">No surprises.</span></h2>
+        <p style="margin-top:16px;font-size:15px;line-height:1.7;color:#a1a1aa;max-width:460px;">I care about code that lasts and products that actually work for the people using them — not just what looks good in a demo.</p>
+        <div style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div style="border-radius:16px;border:1px solid #262629;background:#151518;padding:16px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:#fff;color:#000;display:grid;place-items:center;font-size:14px;font-weight:700;">{}</div>
+            <div style="margin-top:12px;font-size:14px;font-weight:600;">Clean Code</div>
+            <div style="margin-top:4px;font-size:13px;line-height:1.5;color:#a1a1aa;">Readable, well-structured, easy to extend.</div>
+          </div>
+          <div style="border-radius:16px;border:1px solid #262629;background:#151518;padding:16px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:#fff;color:#000;display:grid;place-items-center;font-size:14px;font-weight:700;">⚡</div>
+            <div style="margin-top:12px;font-size:14px;font-weight:600;">Fast Delivery</div>
+            <div style="margin-top:4px;font-size:13px;line-height:1.5;color:#a1a1aa;">Clear timelines and steady progress.</div>
+          </div>
+          <div style="border-radius:16px;border:1px solid #262629;background:#151518;padding:16px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:#fff;color:#000;display:grid;place-items-center;font-size:14px;font-weight:700;">💬</div>
+            <div style="margin-top:12px;font-size:14px;font-weight:600;">Responsive Support</div>
+            <div style="margin-top:4px;font-size:13px;line-height:1.5;color:#a1a1aa;">Reachable on WhatsApp & email.</div>
+          </div>
+          <div style="border-radius:16px;border:1px solid #262629;background:#151518;padding:16px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:#fff;color:#000;display:grid;place-items-center;font-size:14px;font-weight:700;">🛡️</div>
+            <div style="margin-top:12px;font-size:14px;font-weight:600;">Security-Minded</div>
+            <div style="margin-top:4px;font-size:13px;line-height:1.5;color:#a1a1aa;">Protection, secure practices day one.</div>
+          </div>
+        </div>
       </div>
 
-      <div class="container">
-        <div class="row align-items-center gy-5">
-          
-          <!-- Image -->
-          <div class="col-lg-5" data-aos="fade-right">
-            <div class="about-image text-center">
-              <img src="image/profile.png" class="img-fluid rounded-4 shadow-lg" alt="Francis Chege - Full Stack Developer from Kenya" width="500" height="500" loading="lazy">
+      <!-- Skills Box -->
+      <div class="reveal">
+        <div style="border-radius:24px;border:1px solid #262629;background:#151518;padding:24px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;">Stack • Tools • Timeline</div>
+          <h3 style="margin-top:12px;font-size:22px;font-weight:700;letter-spacing:-0.025em;">Full stack, from pixel to production.</h3>
+          <div style="margin-top:32px;">
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
+              <div style="width:80px;flex-shrink:0;padding-top:4px;font-size:11px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Frontend</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">HTML5</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">CSS3</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">JavaScript</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">React</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Tailwind</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Next.js</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
+              <div style="width:80px;flex-shrink:0;padding-top:4px;font-size:11px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Backend</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Node.js</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Express</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Firebase</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">REST</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">WebSockets</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
+              <div style="width:80px;flex-shrink:0;padding-top:4px;font-size:11px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Tools</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Git</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Linux</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Vercel</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Figma</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Postman</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+              <div style="width:80px;flex-shrink:0;padding-top:4px;font-size:11px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Systems</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Rust</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">WASM</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Security</span>
+                <span style="height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;font-size:12px;color:#d4d4d8;display:grid;place-items:center;">Performance</span>
+              </div>
             </div>
           </div>
-          
-          <!-- Content -->
-          <div class="col-lg-7" data-aos="fade-left">
-            <span class="subtitle text-primary fw-bold">Full Stack Developer</span>
-            <h2 class="mt-2">Building Technology That Creates Real Impact</h2>
-            
-            <p class="lead mt-3">
-              I'm <strong>Francis Chege</strong>, a passionate software developer and the founder of <strong>Fratience Technologies</strong> based in Nairobi, Kenya. I transform ideas into modern digital solutions — from responsive websites and Android applications to AI-powered systems and cybersecurity tools.
-            </p>
-            
-            <p>
-              My goal is to build technology that improves people's lives while continuously expanding my knowledge in software engineering, cloud computing, artificial intelligence, and cybersecurity.
-            </p>
-            
-            <!-- Skills -->
-            <div class="mt-4" aria-label="Technical skills">
-              <span class="badge bg-primary me-2 mb-2">Python</span>
-              <span class="badge bg-dark me-2 mb-2">JavaScript</span>
-              <span class="badge bg-success me-2 mb-2">React</span>
-              <span class="badge bg-info text-dark me-2 mb-2">Node.js</span>
-              <span class="badge bg-warning text-dark me-2 mb-2">Android</span>
-              <span class="badge bg-danger me-2 mb-2">Cybersecurity</span>
-              <span class="badge bg-secondary me-2 mb-2">PostgreSQL</span>
-              <span class="badge bg-primary me-2 mb-2">Docker</span>
-            </div>
-            
-            <!-- Personal Info -->
-            <div class="personal-info mt-5">
-              <div class="row g-4">
-                <div class="col-md-6">
-                  <div class="info-item">
-                    <span class="label">Location</span>
-                    <span class="value">Nairobi, Kenya</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-item">
-                    <span class="label">Email</span>
-                    <span class="value">francischege381@gmail.com</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-item">
-                    <span class="label">Phone</span>
-                    <span class="value">+254 790 357 975</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-item">
-                    <span class="label">Company</span>
-                    <span class="value">Fratience Technologies</span>
-                  </div>
-                </div>
+          <!-- Timeline -->
+          <div style="margin-top:32px;padding-top:24px;border-top:1px solid #262629;">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:16px;">Experience Timeline</div>
+            <div style="position:relative;padding-left:24px;border-left:1px solid #262629;">
+              <div style="position:relative;margin-bottom:28px;">
+                <div style="position:absolute;left:-29px;top:4px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px #151518;"></div>
+                <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;">2025 — Present</div>
+                <div style="margin-top:4px;font-size:13.5px;font-weight:600;">Founder, Nexora Technologies</div>
+                <div style="margin-top:4px;font-size:12.5px;line-height:1.6;color:#a1a1aa;">Leading freelance marketplace. 15+ devs, 40+ businesses onboarded.</div>
               </div>
-            </div>
-            
-            <!-- Statistics -->
-            <div class="row text-center mt-5" aria-label="Key statistics">
-              <div class="col-4">
-                <h3 class="fw-bold text-primary">10+</h3>
-                <small>Projects</small>
+              <div style="position:relative;margin-bottom:28px;">
+                <div style="position:absolute;left:-29px;top:4px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px #151518;"></div>
+                <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;">2024 — 2025</div>
+                <div style="margin-top:4px;font-size:13.5px;font-weight:600;">Full Stack Developer, Freelance</div>
+                <div style="margin-top:4px;font-size:12.5px;line-height:1.6;color:#a1a1aa;">Built Fratience, Signix and client products. Performance & security focus.</div>
               </div>
-              <div class="col-4">
-                <h3 class="fw-bold text-primary">3</h3>
-                <small>Products</small>
+              <div style="position:relative;">
+                <div style="position:absolute;left:-29px;top:4px;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px #151518;"></div>
+                <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;">2023</div>
+                <div style="margin-top:4px;font-size:13.5px;font-weight:600;">Started building in public</div>
+                <div style="margin-top:4px;font-size:12.5px;line-height:1.6;color:#a1a1aa;">Shipped first production apps with Firebase and React. Learning Rust.</div>
               </div>
-              <div class="col-4">
-                <h3 class="fw-bold text-primary">2026</h3>
-                <small>Founded Fratience</small>
-              </div>
-            </div>
-            
-            <!-- Buttons -->
-            <div class="mt-5 d-flex flex-wrap gap-3">
-              <a href="#portfolio" class="btn btn-primary">View My Projects</a>
-              <a href="image/Francis_Chege_cv.png" download class="btn btn-outline-primary">Download CV</a>
             </div>
           </div>
-          
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== PORTFOLIO SECTION ===== -->
-    <section id="portfolio" class="portfolio section" aria-labelledby="portfolio-heading">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 id="portfolio-heading">Featured Projects</h2>
-        <div class="title-shape" aria-hidden="true">
-          <svg viewBox="0 0 200 20"><path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path></svg>
+  <!-- ===== PROJECTS DETAIL ===== -->
+  <section id="projects" data-section="projects" class="reveal" style="background:#0a0a0b;padding-top:80px;padding-bottom:80px;">
+    <div class="container">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;">
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#71717a;">Selected Work • Deep Dive</div>
+          <h2 style="margin-top:12px;font-size:30px;font-weight:700;letter-spacing:-0.03em;">Products that shipped.</h2>
         </div>
-        <p>Real products solving real problems — not just demo projects.</p>
+        <div style="display:none;font-size:13px;color:#71717a;font-family:'JetBrains Mono',monospace;max-width:300px;line-height:1.6;">Each project focused on real users, fast loads, and maintainable code.</div>
       </div>
-      
-      <div class="container">
-        <div class="row g-4">
-          
-          <!-- Project 1 -->
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card" aria-labelledby="project1-title">
-              <div class="portfolio-image">
-                <img src="image/nexora.webp" alt="Nexora Technologies - Freelance marketplace platform screenshot" class="img-fluid" loading="lazy" width="600" height="400">
-                <div class="portfolio-overlay">
-                  <a href="https://francis297-web.github.io/nexora/" target="_blank" rel="noopener noreferrer" class="details-link">
-                    <i class="bi bi-arrow-right" aria-hidden="true"></i> View Live
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-content p-4">
-                <span class="category">Full Stack Web App</span>
-                <h3 id="project1-title">Nexora Technologies</h3>
-                <p>Freelance marketplace connecting businesses with developers, startups, and cybersecurity experts across Africa.</p>
-                <div class="tech-stack mt-3" aria-label="Technologies used">
-                  <span class="tech-badge">React.js</span>
-                  <span class="tech-badge">Node.js</span>
-                  <span class="tech-badge">MongoDB</span>
-                </div>
-              </div>
-            </article>
+      <div style="margin-top:40px;">
+        <!-- Nexora Detail -->
+        <div style="border-radius:20px;border:1px solid #262629;background:#151518;overflow:hidden;margin-bottom:20px;display:grid;grid-template-columns:1fr;">
+          <div style="position:relative;height:260px;overflow:hidden;background:#0a0a0b;display:flex;align-items:center;justify-content:center;">
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(124,58,237,0.3),rgba(217,70,239,0.2),rgba(76,29,149,0.2));"></div>
+            <img src="image/nexora.webp" alt="Nexora Technologies" style="width:100%;height:100%;object-fit:cover;" />
           </div>
-          
-          <!-- Project 2 -->
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card" aria-labelledby="project2-title">
-              <div class="portfolio-image">
-                <img src="image/Fratience.png" alt="Fratience Tech Solutions - Business platform screenshot" class="img-fluid" loading="lazy" width="600" height="400">
-                <div class="portfolio-overlay">
-                  <a href="https://project-3fsps-7jc9zubdm-fratience.vercel.app" target="_blank" rel="noopener noreferrer" class="details-link">
-                    <i class="bi bi-arrow-right" aria-hidden="true"></i> View Live
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-content p-4">
-                <span class="category">Business Solution Platform</span>
-                <h3 id="project2-title">Fratience Tech Solutions</h3>
-                <p>Technology consultancy platform helping 20+ local businesses across Kenya digitize operations and solve practical tech challenges.</p>
-                <div class="tech-stack mt-3" aria-label="Technologies used">
-                  <span class="tech-badge">Next.js</span>
-                  <span class="tech-badge">PostgreSQL</span>
-                </div>
-              </div>
-            </article>
+          <div style="padding:28px;display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;font-family:'JetBrains Mono',monospace;color:#a1a1aa;">Marketplace • Live</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:rgba(6,255,165,0.1);border:1px solid rgba(6,255,165,0.2);font-size:11px;font-family:'JetBrains Mono',monospace;color:#06ffa5;">Live</span>
+            </div>
+            <h3 style="margin-top:16px;font-size:22px;font-weight:700;letter-spacing:-0.02em;">Nexora Technologies</h3>
+            <p style="margin-top:12px;font-size:14px;line-height:1.7;color:#a1a1aa;">Freelance marketplace connecting businesses, developers, startups and cybersecurity experts across Kenya. Discovery, trust, fast hiring.</p>
+            <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">React</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Node.js</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Firebase</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Tailwind</span>
+            </div>
+            <div style="margin-top:auto;padding-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="https://francis297-web.github.io/nexora/" target="_blank" style="height:40px;padding:0 20px;border-radius:999px;background:#fff;color:#000;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Live preview ↗</a>
+              <a href="https://github.com/Francis297-web" target="_blank" style="height:40px;padding:0 20px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;color:#fff;font-size:13px;font-weight:500;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Code →</a>
+            </div>
           </div>
-          
-          <!-- Project 3 -->
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card" aria-labelledby="project3-title">
-              <div class="portfolio-image">
-                <img src="image/Signix.webp" alt="Signix - Kenyan Sign Language learning platform screenshot" class="img-fluid" loading="lazy" width="600" height="400">
-                <div class="portfolio-overlay">
-                  <a href="https://signi-6s5o2gddf-fratience.vercel.app" target="_blank" rel="noopener noreferrer" class="details-link">
-                    <i class="bi bi-arrow-right" aria-hidden="true"></i> View Live
-                  </a>
-                </div>
-              </div>
-              <div class="portfolio-content p-4">
-                <span class="category">Accessibility Technology</span>
-                <h3 id="project3-title">Signix - KSL Learning Platform</h3>
-                <p>Web-school for Kenyan Sign Language with interactive dictionary, creator tools, and AI-powered tutor serving the deaf community.</p>
-                <div class="tech-stack mt-3" aria-label="Technologies used">
-                  <span class="tech-badge">React.js</span>
-                  <span class="tech-badge">Python/AI</span>
-                  <span class="tech-badge">Firebase</span>
-                </div>
-              </div>
-            </article>
+        </div>
+        <!-- Fratience Detail -->
+        <div style="border-radius:20px;border:1px solid #262629;background:#151518;overflow:hidden;margin-bottom:20px;display:grid;grid-template-columns:1fr;">
+          <div style="position:relative;height:260px;overflow:hidden;background:#0a0a0b;display:flex;align-items:center;justify-content:center;">
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(16,185,129,0.25),rgba(20,184,166,0.2),rgba(6,78,59,0.2));"></div>
+            <img src="image/Fratience.png" alt="Fratience Tech Solutions" style="width:100%;height:100%;object-fit:cover;" />
           </div>
-          
+          <div style="padding:28px;display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;font-family:'JetBrains Mono',monospace;color:#a1a1aa;">Platform • Live</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:rgba(6,255,165,0.1);border:1px solid rgba(6,255,165,0.2);font-size:11px;font-family:'JetBrains Mono',monospace;color:#06ffa5;">Live</span>
+            </div>
+            <h3 style="margin-top:16px;font-size:22px;font-weight:700;letter-spacing:-0.02em;">Fratience Tech Solutions</h3>
+            <p style="margin-top:12px;font-size:14px;line-height:1.7;color:#a1a1aa;">Practical tech for local businesses — inventory, bookings, M-Pesa integration, offline-first architecture for low-connectivity.</p>
+            <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Next.js</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">MongoDB</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">M-Pesa</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Vercel</span>
+            </div>
+            <div style="margin-top:auto;padding-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="https://project-3fsps-7jc9zubdm-fratience.vercel.app" target="_blank" style="height:40px;padding:0 20px;border-radius:999px;background:#fff;color:#000;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Live preview ↗</a>
+              <a href="https://github.com/Francis297-web" target="_blank" style="height:40px;padding:0 20px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;color:#fff;font-size:13px;font-weight:500;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Code →</a>
+            </div>
+          </div>
+        </div>
+        <!-- Signix Detail -->
+        <div style="border-radius:20px;border:1px solid #262629;background:#151518;overflow:hidden;display:grid;grid-template-columns:1fr;">
+          <div style="position:relative;height:260px;overflow:hidden;background:#0a0a0b;display:flex;align-items:center;justify-content:center;">
+            <div style="position:absolute;inset:0;background:linear-gradient(to bottom right,rgba(37,99,235,0.3),rgba(14,165,233,0.15),rgba(49,46,129,0.2));"></div>
+            <img src="image/signix.webp" alt="Signix — KSL Web School" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+          <div style="padding:28px;display:flex;flex-direction:column;">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:11px;font-family:'JetBrains Mono',monospace;color:#a1a1aa;">EdTech • AI • Live</span>
+              <span style="height:24px;padding:0 10px;border-radius:999px;background:rgba(6,255,165,0.1);border:1px solid rgba(6,255,165,0.2);font-size:11px;font-family:'JetBrains Mono',monospace;color:#06ffa5;">Live</span>
+            </div>
+            <h3 style="margin-top:16px;font-size:22px;font-weight:700;letter-spacing:-0.02em;">Signix — KSL Web School</h3>
+            <p style="margin-top:12px;font-size:14px;line-height:1.7;color:#a1a1aa;">Sign language education for the deaf — KSL dictionary, creator tools, and AI tutor that understands Kenyan Sign Language.</p>
+            <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">React</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">AI</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">PWA</span>
+              <span style="height:28px;padding:0 12px;border-radius:999px;background:#0a0a0b;border:1px solid #262629;font-size:12px;color:#a1a1aa;font-family:'JetBrains Mono',monospace;">Firebase</span>
+            </div>
+            <div style="margin-top:auto;padding-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="https://signi-6s5o2gddf-fratience.vercel.app" target="_blank" style="height:40px;padding:0 20px;border-radius:999px;background:#fff;color:#000;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Live preview ↗</a>
+              <a href="https://github.com/Francis297-web" target="_blank" style="height:40px;padding:0 20px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;color:#fff;font-size:13px;font-weight:500;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Code →</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== SERVICES SECTION ===== -->
-    <section id="services" class="services section" aria-labelledby="services-heading">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 id="services-heading">Services</h2>
-        <div class="title-shape" aria-hidden="true">
-          <svg viewBox="0 0 200 20"><path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path></svg>
-        </div>
-        <p>End-to-end development services for businesses and startups worldwide.</p>
+  <!-- ===== TESTIMONIALS ===== -->
+  <section style="border-top:1px solid #151518;border-bottom:1px solid #151518;background:#0f0f10;padding-top:80px;padding-bottom:80px;">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <h2 style="font-size:26px;font-weight:700;letter-spacing:-0.03em;">What people say</h2>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#71717a;">TRUSTED BY FOUNDERS</div>
       </div>
-      
-      <div class="container">
-        <div class="row g-4">
-          
-          <div class="col-md-6 col-lg-3">
-            <div class="service-item">
-              <i class="bi bi-globe icon" aria-hidden="true"></i>
-              <h3>Web Application Development</h3>
-              <p>Custom web applications using React, Node.js, and modern frameworks with responsive design and optimal performance.</p>
+      <div style="margin-top:40px;display:grid;grid-template-columns:1fr;gap:16px;">
+        <!-- Testimonial 1 -->
+        <div style="border-radius:18px;border:1px solid #262629;background:#151518;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <img src="image/testimonials/John Doe.webp" alt="John Doe" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid #333;" />
+            <div>
+              <div style="font-size:13.5px;font-weight:600;line-height:1;">John Doe</div>
+              <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;margin-top:4px;">CEO, Tech Startup</div>
             </div>
           </div>
-          
-          <div class="col-md-6 col-lg-3">
-            <div class="service-item">
-              <i class="bi bi-phone icon" aria-hidden="true"></i>
-              <h3>Mobile App Development</h3>
-              <p>Native Android applications with modern UI/UX, built from concept to Google Play Store deployment.</p>
+          <p style="margin-top:16px;font-size:13.5px;line-height:1.6;color:#d4d4d8;">“Francis is an exceptional developer with great attention to detail. His work on Nexora was outstanding — clean architecture and shipped on time.”</p>
+          <div style="margin-top:16px;display:flex;gap:4px;">
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div style="border-radius:18px;border:1px solid #262629;background:#151518;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <img src="image/testimonials/Jane Muthoni.webp" alt="Jane Muthoni" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid #333;" />
+            <div>
+              <div style="font-size:13.5px;font-weight:600;line-height:1;">Jane Muthoni</div>
+              <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;margin-top:4px;">Product Manager, Nairobi</div>
             </div>
           </div>
-          
-          <div class="col-md-6 col-lg-3">
-            <div class="service-item">
-              <i class="bi bi-shield-lock icon" aria-hidden="true"></i>
-              <h3>Cybersecurity Solutions</h3>
-              <p>Security-first development approach with anti-fraud systems, secure authentication, and vulnerability assessments.</p>
+          <p style="margin-top:16px;font-size:13.5px;line-height:1.6;color:#d4d4d8;">“Collaborated on multiple products. He moves fast, writes maintainable code, and actually solves business problems, not just tickets.”</p>
+          <div style="margin-top:16px;display:flex;gap:4px;">
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div style="border-radius:18px;border:1px solid #262629;background:#151518;padding:24px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <img src="image/testimonials/Patience.png" alt="Patience Wambui" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid #333;" />
+            <div>
+              <div style="font-size:13.5px;font-weight:600;line-height:1;">Patience Wambui</div>
+              <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;margin-top:4px;">Founder & CEO, Signix</div>
             </div>
           </div>
-          
-          <div class="col-md-6 col-lg-3">
-            <div class="service-item">
-              <i class="bi bi-gear icon" aria-hidden="true"></i>
-              <h3>API & Systems Architecture</h3>
-              <p>RESTful API design, database architecture, and scalable systems-level solutions for growing businesses.</p>
-            </div>
+          <p style="margin-top:16px;font-size:13.5px;line-height:1.6;color:#d4d4d8;">“A true professional who delivers quality code and meets deadlines. Highly recommended for any serious web project from Kenya to global.”</p>
+          <div style="margin-top:16px;display:flex;gap:4px;">
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
+            <span style="font-size:12px;color:#fbbf24;">★</span>
           </div>
-          
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="contact section light-background" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="row g-5">
-          
-          <div class="col-lg-6">
-            <div class="content">
-              <div class="section-category mb-3">Let's Connect</div>
-              <h2 class="display-5 mb-4" id="contact-heading">Have a project in mind?</h2>
-              <p class="lead">I'm currently available for freelance projects and interesting opportunities worldwide. Let's discuss how I can help bring your ideas to life.</p>
-              
-              <div class="contact-info mt-4">
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-envelope-at me-3" aria-hidden="true"></i>
-                  <span>francischege381@gmail.com</span>
-                </div>
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-whatsapp me-3" aria-hidden="true"></i>
-                  <span>+254 790 357 975</span>
-                </div>
-                <div class="info-item d-flex mb-3">
-                  <i class="bi bi-geo-alt me-3" aria-hidden="true"></i>
-                  <span>Nairobi, Kenya (Remote Worldwide)</span>
-                </div>
-              </div>
-              
-              <!-- Social Proof -->
-              <div class="mt-4">
-                <p class="fw-bold mb-2">Connect with me:</p>
-                <div class="d-flex gap-3">
-                  <a href="https://github.com/Francis297-web" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary" aria-label="GitHub Profile">
-                    <i class="bi bi-github" aria-hidden="true"></i> GitHub
-                  </a>
-                  <a href="https://wa.me/254790357975" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary" aria-label="WhatsApp Chat">
-                    <i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp
-                  </a>
-                </div>
-              </div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" data-section="contact" class="reveal" style="background:#0a0a0b;padding-top:80px;padding-bottom:80px;">
+    <div class="container" style="display:grid;grid-template-columns:1fr;gap:40px;">
+      <div>
+        <div style="display:inline-flex;height:28px;padding:0 12px;border-radius:999px;border:1px solid #262629;background:#151518;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;align-items:center;">Get in touch</div>
+        <h2 style="margin-top:16px;font-size:32px;font-weight:700;line-height:0.95;letter-spacing:-0.04em;">Let's build<br />something great.</h2>
+        <p style="margin-top:16px;font-size:14.5px;line-height:1.7;color:#a1a1aa;max-width:380px;">Available for freelance and full-time. Fast responses on WhatsApp and email. Based in Kenya, working globally.</p>
+        <div style="margin-top:32px;">
+          <a href="mailto:francischege381@gmail.com" style="display:flex;align-items:center;gap:12px;border-radius:12px;border:1px solid #262629;background:#151518;padding:0 16px;height:52px;text-decoration:none;color:#fff;margin-bottom:12px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:12px;">✉</div>
+            <div>
+              <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;line-height:1;">Email</div>
+              <div style="font-size:13px;font-weight:500;margin-top:4px;">francischege381@gmail.com</div>
             </div>
-          </div>
-          
-          <div class="col-lg-6">
-            <div class="contact-form card">
-              <div class="card-body p-4">
-                <form action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
-                  <div class="mb-3">
-                    <label for="contact-name" class="visually-hidden">Your Name</label>
-                    <input type="text" id="contact-name" name="name" class="form-control" placeholder="Your Name *" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="contact-email" class="visually-hidden">Your Email</label>
-                    <input type="email" id="contact-email" name="email" class="form-control" placeholder="Your Email *" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="contact-subject" class="visually-hidden">Subject</label>
-                    <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Subject (e.g., Web App Project)">
-                  </div>
-                  <div class="mb-3">
-                    <label for="contact-message" class="visually-hidden">Your Message</label>
-                    <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Tell me about your project... *" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-submit w-100">Send Message</button>
-                </form>
-              </div>
+          </a>
+          <a href="https://wa.me/254790357975" target="_blank" style="display:flex;align-items:center;gap:12px;border-radius:12px;border:1px solid #262629;background:#151518;padding:0 16px;height:52px;text-decoration:none;color:#fff;margin-bottom:12px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#06ffa5;color:#000;display:grid;place-items:center;font-size:12px;">W</div>
+            <div>
+              <div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;line-height:1;">WhatsApp</div>
+              <div style="font-size:13px;font-weight:500;margin-top:4px;">+254 790 357 975</div>
             </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== LOCATION SECTION ===== -->
-    <section id="location" class="map-section" aria-labelledby="location-heading">
-      <div class="container section-title" data-aos="fade-up">
-        <h2 id="location-heading">Location</h2>
-        <div class="title-shape" aria-hidden="true">
-          <svg viewBox="0 0 200 20"><path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path></svg>
-        </div>
-        <p>Find me — Based in Nairobi, Kenya, working with clients worldwide.</p>
-      </div>
-      
-      <div class="container">
-        <div class="map-container" data-aos="fade-up" aria-label="Google Maps location of Francis Chege in Nairobi, Kenya">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8!2d36.8219!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMzEuNiJTIDM2wrA0OScxOC44IkU!5e0!3m2!1sen!2ske!4v1700000000000" allowfullscreen="" loading="lazy" title="Francis Chege location in Nairobi, Kenya" width="100%" height="100%"></iframe>
-          
-          <div class="map-overlay">
-            <h3>📍 Based in Kenya</h3>
-            <div class="info-item">
-              <i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <span>Available for local & remote projects worldwide</span>
-            </div>
-            <div class="info-item mt-2">
-              <a href="https://maps.app.goo.gl/Hy3Xd2qrWa9sEfB69" target="_blank" rel="noopener noreferrer" style="color:#667eea;font-weight:600">
-                Open in Google Maps →
-              </a>
-            </div>
-          </div>
-          
-          <div class="map-badge" aria-label="Location badge">
-            <i class="bi bi-pin-map" aria-hidden="true"></i>
-            <span>Kenya • Remote Worldwide</span>
+          </a>
+          <div style="display:flex;gap:8px;padding-top:8px;">
+            <a href="https://github.com/Francis297-web" target="_blank" style="flex:1;height:44px;border-radius:12px;border:1px solid #262629;background:#151518;display:grid;place-items:center;text-decoration:none;color:#fff;font-size:14px;">GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank" style="flex:1;height:44px;border-radius:12px;border:1px solid #262629;background:#151518;display:grid;place-items:center;text-decoration:none;color:#fff;font-size:14px;">LinkedIn</a>
+            <div style="flex:1;height:44px;border-radius:12px;border:1px solid #262629;background:#151518;display:grid;place-items:center;font-size:14px;color:#fff;">Nairobi, KE</div>
           </div>
         </div>
       </div>
-    </section>
-
-  </main>
+      <div style="border-radius:20px;border:1px solid #262629;background:#151518;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <div style="font-size:14px;font-weight:600;">Send a message</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#71717a;">Avg reply: 2h • EAT</div>
+        </div>
+        <!-- Contact Form -->
+        <div style="margin-top:24px;display:grid;gap:16px;">
+          <div style="display:grid;grid-template-columns:1fr;gap:16px;">
+            <label>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Name</span>
+              <input type="text" id="contactName" placeholder="Francis Client" style="margin-top:8px;width:100%;height:44px;border-radius:10px;border:1px solid #262629;background:#0a0a0b;padding:0 14px;font-size:13.5px;color:#fff;outline:none;" />
+            </label>
+            <label>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Email</span>
+              <input type="email" id="contactEmail" placeholder="you@company.com" style="margin-top:8px;width:100%;height:44px;border-radius:10px;border:1px solid #262629;background:#0a0a0b;padding:0 14px;font-size:13.5px;color:#fff;outline:none;" />
+            </label>
+          </div>
+          <label>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;">Message</span>
+            <textarea id="contactMessage" placeholder="Tell me about your project, timeline, and budget..." rows="5" style="margin-top:8px;width:100%;border-radius:10px;border:1px solid #262629;background:#0a0a0b;padding:14px;font-size:13.5px;color:#fff;outline:none;resize:none;font-family:inherit;"></textarea>
+          </label>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;">
+            <button onclick="copyDraft()" style="height:44px;padding:0 20px;border-radius:999px;background:#fff;color:#000;font-size:13px;font-weight:600;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;">Copy draft ↗</button>
+            <a id="mailtoLink" href="#" style="height:44px;padding:0 20px;border-radius:999px;border:1px solid #262629;background:#0a0a0b;color:#fff;font-size:13px;font-weight:500;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">Open in email ↗</a>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#71717a;align-self:center;">Local draft — no backend, stays in browser until you send</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer id="footer" class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-          <p class="mb-0">© 2026 <strong>Francis Chege</strong></p>
+  <footer style="border-top:1px solid #151518;background:#0a0a0b;">
+    <div class="container" style="padding-top:40px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:-0.025em;">
+          <img src="image/logo.png" alt="logo" style="width:24px;height:24px;border-radius:6px;object-fit:cover;" />
+          Francis<span style="color:#a78bfa;">.</span>
         </div>
-        <div class="col-md-4 text-center mb-3 mb-md-0">
-          <p class="mb-0">Founder of <strong>Fratience Technologies</strong></p>
+        <p style="margin-top:12px;font-size:13px;line-height:1.6;color:#71717a;max-width:320px;">Full Stack Developer and founder of Nexora Technologies, based in Kenya. Building products that scale and teams that ship.</p>
+      </div>
+      <div style="display:flex;gap:48px;font-size:13px;">
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:10px;">Navigation</div>
+          <button onclick="navigateTo('about')" style="display:block;color:#a1a1aa;background:none;border:none;cursor:pointer;text-align:left;padding:4px 0;">About</button>
+          <button onclick="navigateTo('skills')" style="display:block;color:#a1a1aa;background:none;border:none;cursor:pointer;text-align:left;padding:4px 0;">Skills</button>
+          <button onclick="navigateTo('projects')" style="display:block;color:#a1a1aa;background:none;border:none;cursor:pointer;text-align:left;padding:4px 0;">Projects</button>
+          <button onclick="navigateTo('contact')" style="display:block;color:#a1a1aa;background:none;border:none;cursor:pointer;text-align:left;padding:4px 0;">Contact</button>
         </div>
-        <div class="col-md-4 text-md-end text-center">
-          <div class="d-flex justify-content-md-end justify-content-center gap-3">
-            <a href="https://github.com/Francis297-web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.instagram.com/just.call.mi.Cisco" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/FrakySpikes" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://wa.me/254790357975" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-          </div>
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#71717a;margin-bottom:10px;">Live Projects</div>
+          <a href="https://francis297-web.github.io/nexora/" target="_blank" style="display:block;color:#a1a1aa;text-decoration:none;padding:4px 0;">Nexora</a>
+          <a href="https://project-3fsps-7jc9zubdm-fratience.vercel.app" target="_blank" style="display:block;color:#a1a1aa;text-decoration:none;padding:4px 0;">Fratience</a>
+          <a href="https://signi-6s5o2gddf-fratience.vercel.app" target="_blank" style="display:block;color:#a1a1aa;text-decoration:none;padding:4px 0;">Signix</a>
         </div>
       </div>
+    </div>
+    <div style="border-top:1px solid #151518;padding:16px 20px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:11px;font-family:'JetBrains Mono',monospace;color:#71717a;">
+      <div>© 2026 Francis Mbugua Chege. All rights reserved.</div>
+      <div>Built in Nairobi, Kenya • Dark theme #0a0a0b</div>
     </div>
   </footer>
 
-  <!-- ===== FLOATING BUTTONS ===== -->
-  <a href="https://wa.me/254790357975?text=Hi%20Francis%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project!" 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     class="floating-whatsapp" 
-     aria-label="Chat on WhatsApp">
-    <i class="bi bi-whatsapp" aria-hidden="true"></i>
-  </a>
-  
-  <a href="image/Francis_Chege_cv.png" 
-     download 
-     class="download-cv-btn-mobile" 
-     aria-label="Download CV">
-    <i class="bi bi-download" aria-hidden="true"></i> Download CV
-  </a>
-
-  <a href="#" id="scroll-top" class="scroll-top" aria-label="Scroll to top">
-    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
-  </a>
-
-  <!-- ===== SCRIPTS ===== -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/vendor/aos/aos.js" defer></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
-  <script src="js/main.js" defer></script>
   <script>
+    // ===== STATE =====
+    let activeSection = 'home';
+    let toastTimeout = null;
+    let navTick = 0;
+
+    // ===== TOAST =====
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      toast.textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    // ===== NAVIGATION =====
+    function navigateTo(section) {
+      activeSection = section;
+      navTick++;
+
+      // Update nav links
+      document.querySelectorAll('.nav-links button, .mobile-menu button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.section === section);
+      });
+
+      // Scroll
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (section === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // Close mobile menu
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.getElementById('bar1').classList.remove('open1');
+      document.getElementById('bar2').classList.remove('open2');
+      document.getElementById('bar3').classList.remove('open3');
+
+      try { window.location.hash = section; } catch (e) {}
+      showToast(`→ ${section.charAt(0).toUpperCase() + section.slice(1)} · ${navTick}`);
+    }
+
+    // ===== MOBILE MENU =====
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const b1 = document.getElementById('bar1');
+      const b2 = document.getElementById('bar2');
+      const b3 = document.getElementById('bar3');
+      menu.classList.toggle('open');
+      b1.classList.toggle('open1');
+      b2.classList.toggle('open2');
+      b3.classList.toggle('open3');
+    }
+
+    // ===== CONTACT FORM =====
+    function copyDraft() {
+      const name = document.getElementById('contactName').value || 'Your Name';
+      const email = document.getElementById('contactEmail').value || 'your@email.com';
+      const message = document.getElementById('contactMessage').value || '';
+
+      const draft = `Hi Francis,\n\n${message}\n\nFrom: ${name} <${email}>`;
+
+      navigator.clipboard.writeText(draft).then(() => {
+        showToast('Draft copied!');
+      }).catch(() => {
+        // Fallback
+        const ta = document.createElement('textarea');
+        ta.value = draft;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+        showToast('Draft copied!');
+      });
+
+      // Update mailto link
+      const mailto = document.getElementById('mailtoLink');
+      mailto.href = `mailto:francischege381@gmail.com?subject=${encodeURIComponent(`Project inquiry from ${name}`)}&body=${encodeURIComponent(draft)}`;
+    }
+
+    // Update mailto on input change
     document.addEventListener('DOMContentLoaded', function() {
-      AOS.init({ duration: 800, once: true });
+      ['contactName', 'contactEmail', 'contactMessage'].forEach(id => {
+        document.getElementById(id).addEventListener('input', copyDraft);
+      });
+      // Initial mailto setup
+      copyDraft();
+
+      // ===== SCROLL REVEAL =====
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            const section = entry.target.dataset.section;
+            if (section) {
+              activeSection = section;
+              document.querySelectorAll('.nav-links button, .mobile-menu button').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.section === section);
+              });
+            }
+          }
+        });
+      }, { threshold: 0.2 });
+
+      reveals.forEach(el => observer.observe(el));
+
+      // Set home as active initially
+      document.querySelector('.nav-links button[data-section="home"]').classList.add('active');
     });
   </script>
+
 </body>
 </html>
