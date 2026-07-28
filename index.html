@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- External CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,6 +32,9 @@
         <div class="logo-badge">FC</div>
         <span>Francis Chege</span>
       </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="#home" class="nav-link">Home</a></li>
@@ -39,7 +45,10 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <a href="#contact" class="btn-hire">Hire Me</a>
+      <div class="navbar-actions">
+        <a href="path/to/your/cv.pdf" class="btn-cv" download>Download CV</a>
+        <a href="#contact" class="btn-hire">Hire Me</a>
+      </div>
     </div>
   </header>
 
@@ -112,17 +121,17 @@
 
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">💻</div>
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
           <h3>Full-Stack Development</h3>
           <p>Custom Web & Mobile applications engineered for speed, security, and long-term scalability.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">⚡</div>
+          <div class="service-icon"><i class="fas fa-bolt"></i></div>
           <h3>UI/UX Systems</h3>
           <p>Modern, intuitive design frameworks built with dark-mode aesthetic and user retention in mind.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">🚀</div>
+          <div class="service-icon"><i class="fas fa-rocket"></i></div>
           <h3>Product Architecture</h3>
           <p>End-to-end technical strategy, API development, and deployment pipelines for startups.</p>
         </div>
@@ -155,13 +164,12 @@
             <p>An intuitive web suite serving modern digital tools and workflow enhancements.</p>
           </div>
         </div>
-      </div>
 
         <div class="portfolio-card">
-          <img src="image/signix.webp" alt="Signix Project" class="portfolio-img" onerror="this.src='https://via.placeholder.com/600x300/151518/ffffff?text=Fratience+Ecosystem'">
+          <img src="image/signix.webp" alt="Signix Project" class="portfolio-img" onerror="this.src='https://via.placeholder.com/600x300/151518/ffffff?text=Signix+Platform'">
           <div class="portfolio-content">
             <span class="portfolio-tag">Venture 03</span>
-            <h3>Signix-deaf learning platform</h3>
+            <h3>Signix - Deaf Learning Platform</h3>
             <p>An intuitive web suite serving the deaf educational/academic needs.</p>
           </div>
         </div>
@@ -223,16 +231,16 @@
           <!-- Icon-Only Social Links -->
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/chege-francis" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
-             <i>fa-brand fa-linkedIn</i>
+              <i class="fab fa-linkedin-in"></i>
             </a>
             <a href="https://www.instagram.com/Just.call.mi.Cisco" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
-             <i>fa-brand fa-instagram</i>
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.facebook.com/Fraky Spikes" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
-              <i>fa-brand fa-facebook</i>
+              <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://wa.me/254790357975" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp">
-              <i>fa-brand fa-whatsapp</i>
+              <i class="fab fa-whatsapp"></i>
             </a>
           </div>
         </div>
