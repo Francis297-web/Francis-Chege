@@ -1,159 +1,112 @@
+// ===== STATE =====
+let activeSection = 'home';
+let toastTimeout = null;
+let navTick = 0;
 
-(function () {
-  "use strict";
+// ===== TOAST =====
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
 
-  const header = document.getElementById("header");
-  const navmenu = document.getElementById("navmenu");
-  const navLinks = navmenu ? navmenu.querySelectorAll("a[href^='#']") : [];
-  const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+// ===== NAVIGATION =====
+function navigateTo(section) {
+  activeSection = section;
+  navTick++;
 
-  /* ----------------------------------------------------------------
-     Sticky header shrink/shadow state
-  ---------------------------------------------------------------- */
-  function toggleScrolled() {
-    if (!header) return;
-    const scrolled = window.scrollY > 60;
-    document.body.classList.toggle("scrolled", scrolled);
-    header.classList.toggle("scrolled", scrolled);
-  }
-  document.addEventListener("scroll", toggleScrolled);
-  window.addEventListener("load", toggleScrolled);
-
-  /* ----------------------------------------------------------------
-     Mobile nav toggle (hamburger <-> close icon)
-  ---------------------------------------------------------------- */
-  function mobileNavToogle() {
-    document.body.classList.toggle("mobile-nav-active");
-    if (mobileNavToggle) {
-      mobileNavToggle.classList.toggle("bi-list");
-      mobileNavToggle.classList.toggle("bi-x");
-    }
-  }
-  if (mobileNavToggle) {
-    mobileNavToggle.addEventListener("click", mobileNavToogle);
-  }
-
-  // Close the mobile menu automatically after tapping a nav link
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (document.body.classList.contains("mobile-nav-active")) {
-        mobileNavToogle();
-      }
-    });
+  // Update nav links
+  document.querySelectorAll('.nav-links button, .mobile-menu button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.section === section);
   });
 
-  /* ----------------------------------------------------------------
-     Smooth scroll to in-page anchors, offset for the sticky header
-  ---------------------------------------------------------------- */
-  function getHeaderOffset() {
-    return header ? header.offsetHeight : 0;
+  // Scroll
+  const el = document.getElementById(section);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (section === 'home') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  function scrollToTarget(targetId) {
-    const target = document.querySelector(targetId);
-    if (!target) return;
-    const top =
-      target.getBoundingClientRect().top + window.pageYOffset - getHeaderOffset() - 10;
-    window.scrollTo({ top, behavior: "smooth" });
-  }
+  // Close mobile menu
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('bar1').classList.remove('open1');
+  document.getElementById('bar2').classList.remove('open2');
+  document.getElementById('bar3').classList.remove('open3');
 
-  document.querySelectorAll("a[href^='#']").forEach((link) => {
-    const href = link.getAttribute("href");
-    if (!href || href === "#" || href.length < 2) return;
-    link.addEventListener("click", (e) => {
-      if (document.querySelector(href)) {
-        e.preventDefault();
-        scrollToTarget(href);
-        history.pushState(null, "", href);
-      }
-    });
+  try { window.location.hash = section; } catch (e) {}
+  showToast(`→ ${section.charAt(0).toUpperCase() + section.slice(1)}`);
+}
+
+// ===== MOBILE MENU =====
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const b1 = document.getElementById('bar1');
+  const b2 = document.getElementById('bar2');
+  const b3 = document.getElementById('bar3');
+  menu.classList.toggle('open');
+  b1.classList.toggle('open1');
+  b2.classList.toggle('open2');
+  b3.classList.toggle('open3');
+}
+
+// ===== CONTACT FORM =====
+function copyDraft() {
+  const name = document.getElementById('contactName').value || 'Your Name';
+  const email = document.getElementById('contactEmail').value || 'your@email.com';
+  const message = document.getElementById('contactMessage').value || '';
+
+  const draft = `Hi Francis,\n\n${message}\n\nFrom: ${name} <${email}>`;
+
+  navigator.clipboard.writeText(draft).then(() => {
+    showToast('Draft copied!');
+  }).catch(() => {
+    // Fallback
+    const ta = document.createElement('textarea');
+    ta.value = draft;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+    showToast('Draft copied!');
   });
 
-  // If the page loads with a hash already in the URL, scroll there
-  // (accounting for the fixed header) once everything has rendered.
-  window.addEventListener("load", () => {
-    if (window.location.hash && document.querySelector(window.location.hash)) {
-      setTimeout(() => scrollToTarget(window.location.hash), 100);
-    }
+  // Update mailto link
+  const mailto = document.getElementById('mailtoLink');
+  mailto.href = `mailto:francischege381@gmail.com?subject=${encodeURIComponent(`Project inquiry from ${name}`)}&body=${encodeURIComponent(draft)}`;
+}
+
+// Update mailto on input change
+document.addEventListener('DOMContentLoaded', function () {
+  ['contactName', 'contactEmail', 'contactMessage'].forEach(id => {
+    document.getElementById(id).addEventListener('input', copyDraft);
   });
+  // Initial mailto setup
+  copyDraft();
 
-  /* ----------------------------------------------------------------
-     Scrollspy: highlight the current section's nav link
-  ---------------------------------------------------------------- */
-  const sections = Array.from(navLinks)
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
-
-  if (sections.length && "IntersectionObserver" in window) {
-    const spyObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = `#${entry.target.id}`;
-            navLinks.forEach((link) => {
-              link.classList.toggle("active", link.getAttribute("href") === id);
-            });
-          }
-        });
-      },
-      { rootMargin: `-${getHeaderOffset() + 40}px 0px -60% 0px`, threshold: 0 }
-    );
-    sections.forEach((section) => spyObserver.observe(section));
-  }
-
-  /* ----------------------------------------------------------------
-     AOS (Animate On Scroll) init
-  ---------------------------------------------------------------- */
-  function initAOS() {
-    if (typeof AOS !== "undefined") {
-      AOS.init({
-        duration: 600,
-        easing: "ease-in-out",
-        once: true,
-        mirror: false,
-      });
-    }
-  }
-  window.addEventListener("load", initAOS);
-
-  /* ----------------------------------------------------------------
-     Swiper: read embedded JSON config from each .init-swiper block
-     (matches the <script type="application/json" class="swiper-config">
-     pattern used in the testimonials section)
-  ---------------------------------------------------------------- */
-  function initSwipers() {
-    if (typeof Swiper === "undefined") return;
-    document.querySelectorAll(".init-swiper").forEach((swiperEl) => {
-      const configEl = swiperEl.querySelector(".swiper-config");
-      let config = {};
-      if (configEl) {
-        try {
-          config = JSON.parse(configEl.textContent.trim());
-        } catch (err) {
-          console.error("Invalid Swiper config JSON:", err);
+  // ===== SCROLL REVEAL =====
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        const section = entry.target.dataset.section;
+        if (section) {
+          activeSection = section;
+          document.querySelectorAll('.nav-links button, .mobile-menu button').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.section === section);
+          });
         }
       }
-      new Swiper(swiperEl, config);
     });
-  }
-  window.addEventListener("load", initSwipers);
+  }, { threshold: 0.2 });
 
-  /* ----------------------------------------------------------------
-     FAQ accordion (single item open at a time)
-  ---------------------------------------------------------------- */
-  document.querySelectorAll(".faq-item h3, .faq-item .faq-toggle").forEach((el) => {
-    el.addEventListener("click", () => {
-      const item = el.closest(".faq-item");
-      if (!item) return;
-      const wasActive = item.classList.contains("faq-active");
+  reveals.forEach(el => observer.observe(el));
 
-      item.parentElement
-        .querySelectorAll(".faq-item")
-        .forEach((i) => i.classList.remove("faq-active"));
-
-      if (!wasActive) {
-        item.classList.add("faq-active");
-      }
-    });
-  });
-})();
+  // Set home as active initially
+  document.querySelector('.nav-links button[data-section="home"]').classList.add('active');
+});
