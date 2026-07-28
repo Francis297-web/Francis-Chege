@@ -25,11 +25,13 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Message sent!</div>
 
-  <!-- Navbar -->
+<!-- Navbar -->
   <header class="navbar">
     <div class="container navbar-inner">
       <a href="#home" class="logo">
-        <div class="logo-badge">FC</div>
+        <img src="image/logo.png" alt="Francis Chege Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <!-- Fallback badge in case the logo image is missing -->
+        <div class="logo-badge" style="display: none;">FC</div>
         <span>Francis Chege</span>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
@@ -37,7 +39,7 @@
       </button>
       <nav id="navMenu" aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About Me</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
           <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -46,12 +48,11 @@
         </ul>
       </nav>
       <div class="navbar-actions">
-        <a href="path/to/your/cv.pdf" class="btn-cv" download>Download CV</a>
+        <a href="image/Francis_Chege_cv..png" class="btn-cv" download="Francis_Chege_CV.png">Download CV</a>
         <a href="#contact" class="btn-hire">Hire Me</a>
       </div>
     </div>
   </header>
-
   <main class="container">
     <!-- Home / Hero Section -->
     <section id="home" class="hero-section">
