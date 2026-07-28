@@ -4,16 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Francis Chege - Founder of Nexora & Fratience</title>
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+
   <!-- External CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <span>↑</span>
+  </button>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Message sent!</div>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="container navbar-inner">
@@ -21,14 +29,16 @@
         <div class="logo-badge">FC</div>
         <span>Francis Chege</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About Me</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
       <a href="#contact" class="btn-hire">Hire Me</a>
     </div>
   </header>
@@ -70,7 +80,7 @@
         <div class="hero-visual">
           <div class="profile-card">
             <div class="profile-image-wrap">
-              <img src="image/John Doe.webp" alt="Francis Chege" onerror="this.src='https://via.placeholder.com/300x375/151518/ffffff?text=Francis+Chege'">
+              <img src="image/profile.png" alt="Francis Chege" onerror="this.src='https://via.placeholder.com/300x375/151518/ffffff?text=Francis+Chege'">
             </div>
             <div class="nameplate">
               <span class="name">Francis Chege</span>
@@ -200,47 +210,25 @@
           <h2 class="section-title">Let's Connect</h2>
           <p class="section-desc">Reach out through any platform below or send a direct message.</p>
 
-          <div class="social-links">
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/chege-francis" target="_blank" class="social-link">
-              <span class="social-icon">💼</span>
-              <div class="social-info">
-                <label>LinkedIn</label>
-                <span>Chege Francis</span>
-              </div>
+          <!-- Icon-Only Social Links -->
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/chege-francis" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+              <span>💼</span>
             </a>
-
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/Just.call.mi.Cisco" target="_blank" class="social-link">
-              <span class="social-icon">📸</span>
-              <div class="social-info">
-                <label>Instagram</label>
-                <span>@Just.call.mi.Cisco</span>
-              </div>
+            <a href="https://www.instagram.com/Just.call.mi.Cisco" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+              <span>📸</span>
             </a>
-
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/Fraky Spikes" target="_blank" class="social-link">
-              <span class="social-icon">🌐</span>
-              <div class="social-info">
-                <label>Facebook</label>
-                <span>Fraky Spikes</span>
-              </div>
+            <a href="https://www.facebook.com/Fraky Spikes" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+              <span>🌐</span>
             </a>
-
-            <!-- WhatsApp -->
-            <a href="https://wa.me/254790357975" target="_blank" class="social-link">
-              <span class="social-icon">💬</span>
-              <div class="social-info">
-                <label>WhatsApp</label>
-                <span>0790357975</span>
-              </div>
+            <a href="https://wa.me/254790357975" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp">
+              <span>💬</span>
             </a>
           </div>
         </div>
 
         <!-- Form -->
-        <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
+        <form id="contactForm" class="contact-form">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name</label>
@@ -255,7 +243,7 @@
             <label for="message">Message</label>
             <textarea id="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%; border:none; cursor:pointer;">Send Message</button>
+          <button type="submit" class="btn-primary">Send Message</button>
         </form>
       </div>
     </section>
@@ -266,39 +254,7 @@
     <p>&copy; 2026 Francis Chege. Founder of Nexora & Fratience. All rights reserved.</p>
   </footer>
 
-  <!-- Embedded JS Logic -->
-  <script>
-    // 1. Scroll Back To Top Button Logic
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollTopBtn.classList.add('visible');
-      } else {
-        scrollTopBtn.classList.remove('visible');
-      }
-    });
-
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-
-    // 2. Form Submission Handler (Prevents immediate false popup)
-    function handleFormSubmit(event) {
-      event.preventDefault();
-      
-      const toast = document.getElementById('toast');
-      toast.classList.add('show');
-      
-      document.getElementById('contactForm').reset();
-
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 3000);
-    }
-  </script>
+  <!-- External JS -->
+  <script src="js/script.js"></script>
 </body>
 </html>
